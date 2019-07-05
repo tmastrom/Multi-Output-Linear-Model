@@ -30,11 +30,14 @@ err_ = (norm( (Yte - Yp_)  , 'fro')/ norm(Yte, 'fro'));
 x = linspace(0,max(max(Yte(1,:)',Yp(1,:)')), 128);
 figure('name','Heating Values')
 plot(x,Yte(1,:),'k',x, Yp(1,:),'r')
+title('Heating Values')
+legend('Actual','Predicted')
 
 % plot 2nd row of test and predicted values
 x1 = linspace(0,max(max(Yte(2,:)',Yp(2,:)')), 128);
 figure('name','Cooling Values')
 plot(x,Yte(2,:),'k',x, Yp(2,:),'b')
-
+title('Heating Values')
+legend('Actual','Predicted')
 
 
