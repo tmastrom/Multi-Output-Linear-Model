@@ -20,10 +20,10 @@ W_ = Xhatp*Ytr';
 
 
 % Apply model to the test data
-Yp = W(1:8,:)'*Xte + [b1;b2];   % Eq.3.3 results
+Yp = W(1:8,:)'*Xte + W(9,:)';   % Eq.3.3 results
 err = (norm( (Yte - Yp)  , 'fro')/ norm(Yte, 'fro'));
 
-Yp_ = W_(1:8,:)'*Xte + [b1_;b2_]; % Eq. 3.4 results
+Yp_ = W_(1:8,:)'*Xte + W_(9,:)'; % Eq. 3.4 results
 err_ = (norm( (Yte - Yp_)  , 'fro')/ norm(Yte, 'fro'));
 
 % plot the first row of the test and predicted values
