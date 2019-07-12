@@ -37,7 +37,7 @@ legend('Actual','Predicted')
 x1 = linspace(0,max(max(Yte(2,:)',Yp(2,:)')), 128);
 figure('name','Cooling Values')
 plot(x,Yte(2,:),'k',x, Yp(2,:),'b')
-title('Heating Values')
+title('Cooling Values')
 legend('Actual','Predicted')
 
 
